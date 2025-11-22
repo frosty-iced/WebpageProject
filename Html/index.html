@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Night Roast — Home</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Night Roast home">
+        <svg class="logo" width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="var(--accent)"></circle>
+          <path d="M8 10c1-2 4-3 6-1" stroke="var(--accent)" stroke-linecap="round"></path>
+        </svg>
+        <span class="brand-text">Night Roast</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Brewed with passion. Served with heart.</h1>
+          <p class="hero-sub">Small-batch roasted beans, crafted espresso, cozy corners. Welcome to Night Roast — your late-night refuge.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="menu.html">Order Now</a>
+            <a class="btn btn-ghost" href="about.html">Our Story</a>
+          </div>
+          <ul class="feature-list">
+            <li>🌱 Sustainably sourced beans</li>
+            <li>☕ Expert baristas</li>
+            <li>🕯️ Cozy late-night hours</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="hero-card">
+            <img src="https://www.cocktailsandmovies.com/wp-content/uploads/2025/03/Midnight-Espress-Fizz-uai-616x346.png" alt="Close-up of espresso in a dark cafe" loading="lazy">
+            <div class="card-badge">Signature: Midnight Espresso</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE DRINKS -->
+    <section class="section container">
+      <h2 class="section-title">Signature Drinks</h2>
+      <div class="grid grid-3 responsive-grid">
+        <article class="product-card">
+          <img src="https://syruvia.com/cdn/shop/articles/Sugar-Free_Red_Velvet.jpg?v=1733751977&width=750" alt="Latte art" loading="lazy">
+          <h3>Velvet Latte</h3>
+          <p class="muted">Silky steamed milk with single-origin espresso.</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://thegreencreator.com/wp-content/uploads/Refreshing-Cold-Brew-Tonic-with-cold-brew-coffee-tonic-water-and-citrus-TheGreenCreator-1.jpg" alt="Iced coffee with foam" loading="lazy">
+          <h3>Cold Brew Tonic</h3>
+          <p class="muted">Bright cold brew with tonic and citrus twist.</p>
+        </article>
+
+        <article class="product-card">
+          <img src="https://www.cocktailsandmovies.com/wp-content/uploads/2025/03/Midnight-Espress-Fizz-uai-616x346.png" alt="Espresso" loading="lazy">
+          <h3>Midnight Espresso</h3>
+          <p class="muted">Our house roast — bold, chocolatey, long finish.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section alt-bg">
+      <div class="container">
+        <h2 class="section-title">Why Night Roast</h2>
+        <div class="grid grid-4 responsive-grid">
+          <div class="usp">
+            <div class="usp-icon" aria-hidden="true">☕</div>
+            <h4>Fresh Roasts</h4>
+            <p class="muted">Small-batch roasted weekly for peak flavor.</p>
+          </div>
+
+          <div class="usp">
+            <div class="usp-icon" aria-hidden="true">👨‍🍳</div>
+            <h4>Skilled Baristas</h4>
+            <p class="muted">Baristas trained for precision and care.</p>
+          </div>
+
+          <div class="usp">
+            <div class="usp-icon" aria-hidden="true">🌿</div>
+            <h4>Sustainable</h4>
+            <p class="muted">Compostable cups & locally sourced milk.</p>
+          </div>
+
+          <div class="usp">
+            <div class="usp-icon" aria-hidden="true">🏘️</div>
+            <h4>Community</h4>
+            <p class="muted">A space for creatives and late-night studiers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE / SEASONAL -->
+    <section class="section container feature">
+      <div class="feature-inner">
+        <div class="feature-media">
+          <img src="https://images.summitmedia-digital.com/spotph/images/2023/10/06/cacao-culture-shop-13-1696527575.jpg" alt="Seasonal drink" loading="lazy">
+        </div>
+        <div class="feature-content">
+          <h3>Seasonal Special — Davao Cacao Mocha</h3>
+          <p class="muted">A mocha made using local Davao tablea cacao instead of chocolate syrup. Limited run.</p>
+          <a class="btn btn-primary" href="menu.html">Try it Today</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section container newsletter">
+      <div class="newsletter-inner">
+        <div>
+          <h3>Join the Roaster's Club</h3>
+          <p class="muted">10% off your first order + early access to seasonal drinks.</p>
+        </div>
+
+        <form id="newsletter-form" class="newsletter-form" action="#" method="post" onsubmit="return handleNewsletter(event)">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@coffee.com" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Night Roast</strong>
+        <p class="muted">Late-night coffee shop. Open 6am - 11pm everyday.</p>
+      </div>
+      <div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <p>Follow us</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="X">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="year"></span> Night Roast — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

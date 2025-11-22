@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Night Roast — Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Night Roast home">
+        <svg class="logo" width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="var(--accent)"></circle>
+          <path d="M8 10c1-2 4-3 6-1" stroke="var(--accent)" stroke-linecap="round"></path>
+        </svg>
+        <span class="brand-text">Night Roast</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="menu" class="section container">
+  <h1 class="section-title">Our Menu</h1>
+  <p class="muted">Explore our coffees, teas, and fresh-baked treats. Click an item for details.</p>
+
+  <div class="menu-grid">
+    <!-- Espresso -->
+    <article class="menu-item" data-category="coffee">
+      <img src="https://courtyardcafe.pk/wp-content/uploads/2024/06/espresso.jpg" alt="Espresso">
+      <div class="menu-body">
+        <div>
+          <h3>Espresso</h3>
+          <p class="muted">Single-origin pull — bold and balanced.</p>
+        </div>
+        <div class="price">₱120</div>
+      </div>
+    </article>
+
+    <!-- Velvet Latte -->
+    <article class="menu-item" data-category="coffee">
+      <img src="https://syruvia.com/cdn/shop/articles/Sugar-Free_Red_Velvet.jpg?v=1733751977&width=750" alt="Velvet Latte">
+      <div class="menu-body">
+        <div>
+          <h3>Velvet Latte</h3>
+          <p class="muted">Creamy red-velvet inspired latte — smooth & decadent.</p>
+        </div>
+        <div class="price">₱180</div>
+      </div>
+    </article>
+
+    <!-- Cold Brew Tonic -->
+    <article class="menu-item" data-category="coffee">
+      <img src="https://thegreencreator.com/wp-content/uploads/Refreshing-Cold-Brew-Tonic-with-cold-brew-coffee-tonic-water-and-citrus-TheGreenCreator-1.jpg" alt="Cold Brew Tonic">
+      <div class="menu-body">
+        <div>
+          <h3>Cold Brew Tonic</h3>
+          <p class="muted">Effervescent tonic + bright cold brew and citrus.</p>
+        </div>
+        <div class="price">₱160</div>
+      </div>
+    </article>
+
+    <!-- Matcha Latte -->
+    <article class="menu-item" data-category="tea">
+      <img src="https://www.modernfarmhouseeats.com/wp-content/uploads/2022/02/starbucks-iced-matcha-latte-8.jpg" alt="Matcha Latte">
+      <div class="menu-body">
+        <div>
+          <h3>Matcha Latte</h3>
+          <p class="muted">Ceremonial-grade matcha, steamed with your choice of milk.</p>
+        </div>
+        <div class="price">₱170</div>
+      </div>
+    </article>
+
+    <!-- Butter Croissant -->
+    <article class="menu-item" data-category="bakery">
+      <img src="https://butterboyph.com/cdn/shop/files/classic_622x.jpg?v=1714490336" alt="Butter Croissant">
+      <div class="menu-body">
+        <div>
+          <h3>Butter Croissant</h3>
+          <p class="muted">Flaky layers, rich butter flavor — baked fresh daily.</p>
+        </div>
+        <div class="price">₱75</div>
+      </div>
+    </article>
+
+    <!-- Chocolate Brownie -->
+    <article class="menu-item" data-category="bakery">
+      <img src="https://icecreambakery.in/wp-content/uploads/2024/12/Brownie-Recipe-with-Cocoa-Powder.jpg" alt="Chocolate Brownie">
+      <div class="menu-body">
+        <div>
+          <h3>Chocolate Brownie</h3>
+          <p class="muted">Fudgy and rich — perfect with your espresso shot.</p>
+        </div>
+        <div class="price">₱95</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Night Roast</strong>
+        <p class="muted">Late-night coffee shop. Open 6am - 11pm everyday.</p>
+      </div>
+      <div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <p>Follow us</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="X">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="year-2"></span> Night Roast — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

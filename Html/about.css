@@ -1,0 +1,101 @@
+/* ---------- Global Dark Theme ---------- */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0d0d0d;
+    color: #e6e6e6;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #111;
+    border-bottom: 1px solid #333;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c89b3c;
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #e6e6e6;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #c89b3c;
+}
+
+/* ---------- About Section Layout ---------- */
+.about-section {
+    padding: 80px 10%;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 42px;
+    color: #c89b3c;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+/* ---------- Image + Caption ---------- */
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(200, 155, 60, 0.3);
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        order: 2;
+    }
+
+    .about-image {
+        order: 1;
+    }
+}

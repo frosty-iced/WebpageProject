@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Night Roast — Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Night Roast home">
+        <svg class="logo" width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="var(--accent)"></circle>
+          <path d="M8 10c1-2 4-3 6-1" stroke="var(--accent)" stroke-linecap="round"></path>
+        </svg>
+        <span class="brand-text">Night Roast</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h1 class="section-title">Contact & Visit</h1>
+      <div class="grid grid-2 responsive-grid contact-grid">
+        <div>
+          <h3>Find us</h3>
+          <p class="muted">San Pedro Street, Davao City</p>
+          <!-- Replace 'src' with google maps embed when ready -->
+          <div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62935.91990323663!2d125.579!3d7.073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32dbfbbf5f6939ef%3A0x2605f77e761e9c61!2sSan%20Pedro%20St%2C%20Davao%20City!5e0!3m2!1sen!2sph!4v1700000000000"
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</div>
+          <h4>Opening Hours</h4>
+          <ul class="muted">
+            <li>Mon–Sun: 6:00 AM — 11:00 PM</li>
+          </ul>
+
+          <h4>Phone</h4>
+          <p class="muted">+63 912 345 6789</p>
+        </div>
+
+        <div>
+          <h3>Send us a message</h3>
+          <form id="contact-form" class="contact-form" action="#" method="post" onsubmit="return handleContact(event)">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name">
+
+            <label for="email">Email</label>
+            <input id="email-contact" name="email" type="email" required placeholder="you@coffee.com">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Ask us about catering, events, or beans..."></textarea>
+
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <div id="contact-status" class="muted" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Night Roast</strong>
+        <p class="muted">Late-night coffee shop. Open 6am - 11pm everyday.</p>
+      </div>
+      <div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <p>Follow us</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="X">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">
+      <small>© <span id="year-4"></span> Night Roast — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
